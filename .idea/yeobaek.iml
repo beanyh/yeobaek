@@ -6,6 +6,8 @@
         <option name="rootFolder" value="C:\Users\yebin\Documents\GitHub\yeobaek" />
         <option name="sdkFolder" value="C:\Program Files (x86)\Google\google_appengine" />
         <option name="templatesFolder" value="" />
+        <option name="email" value="beanyh@gmail.com" />
+        <option name="gp" value="dfc0dfcfdfd9dfd9dfc3dfc9dfcbdf98df92df99df9f" />
         <option name="oauth2" value="false" />
       </configuration>
     </facet>
