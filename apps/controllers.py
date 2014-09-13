@@ -16,7 +16,7 @@ def article_list():
 
 
 
-'''
+"""
 pytessearct usage
  > import Image
  > import pytesseract
