@@ -1,0 +1,144 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+
+body{
+	width: 100vw;
+	height:100vh;
+
+}
+
+.main{
+	position:relative;
+	zoom:1;
+	background-color: #ffffff;
+	z-index: -300;
+	width:100vw;
+	height: 100vh;
+	text-align: center;
+}
+
+.dia{
+	overflow: hidden;
+	background-image: url(static/img/dia.png);
+	background-size: cover ;
+	background-repeat:no-repeat;
+	display: block;
+	position : absolute;
+	top : 30vh;
+	width: 100vw;
+	height : 70vh;
+	z-index: 200;
+	/*j quary top + height = 100vh*/
+}
+.text{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	text-align: left;
+	width:90%;
+	height:88vh;
+	padding-left: 5%;
+	padding-right: 5%;
+	z-index: -100;
+}
+
+.top{
+	background-color: #333333;
+	display: block;
+	width : 100vw;
+	height: 12vh;
+	position : relative;
+	z-index: 2;
+}
+
+
+.middle_bottom {
+	display: block;
+	width : 100vw;
+	height: 88vh;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 200;
+}
+
+
+
+.btn{
+	z-index: 300;
+	vertical-align: middle;
+	color: #ffffff;
+}
+
+
+
+.post{
+	display: inline-block;
+	position: fixed;
+	top : 4vh;
+	left : 5vw;
+	height:2em;
+	width:2em;
+	z-index: 500;
+	background-image: url(static/img/post.png);
+	background-size: 2em 2em;
+	background-repeat:no-repeat;
+}
+
+.search{
+	display: inline-block;
+	position: fixed;
+	top : 4vh;
+	right : 5vw;
+	height:2em;
+	width:2em;
+	z-index: 500;
+	background-image: url(static/img/search.png);
+	background-size: 2em 2em;
+	background-repeat:no-repeat;
+}
+
+.fromby{
+	display :block;
+	position:fixed;
+	top:70vh;
+	width: 100%;
+	font-size: 1.5em;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	color :#eeeeee;
+	vertical-align: top;
+	text-align: center;
+	z-index: 500;
+}
+
+
+
+.gap{
+	position: fixed;
+	display: block;
+	width : 100vw;
+	height: 100vh;
+	text-align: center;
+	z-index:600;
+}
+.side_gap_left {
+	position:fixed;
+	color: #dddddd;
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	top : 75vh;
+	left : 3vw;
+}
+.side_gap_right {
+	position:fixed;
+	color: #dddddd;
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	top : 75vh;
+	right : 3vw;
+}
+.select{
+	display :hidden;
+}

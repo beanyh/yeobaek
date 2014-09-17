@@ -1,31 +1,34 @@
-<!--미리보기 페이지-->
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
 
-{% block contents %}
-    <div class="ArticleShow">
-	<div class="main">
+    <title> 여백 메인화면:) </title>
+	<link rel = "stylesheet" href="static/css/main2.css">
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+
+<div class="main">
 	<div class="top">
-        <label>
-		<div class="post">
-            <label>
-                <a href="{{url_for()}}"><img src = "../static/img/post.png"></a>
-		        <input type="file" id="take-picture" accept="image/*" style="display:none;">
-		    </label>
-        </div>
-        <div class="search"><a href="{{url_for('search')}}"><img src = "../static/img/search.png"></a></div>
+		<div class="post"></div>
+		<div class="search"></div>
 	</div>
-	<!--top :메뉴바-->
 
-	<div class="middle">
-		<img class = "dia" src = "../static/img/dia.png">
+
+	<div class="middle_bottom">
+		<img class = "dia" src = "static/img/dia.png">
 			<div class ="text">
+			<!--{% for items in all_list %}
+			    <a class="text" href="show/{{ items.key() }}"><img class="example-image" src="show/{{ items.key() }}" alt=""></a>
+                {% endfor %}-->
 				<p>The viewport is the rectangular area that provides a drawable region for your web page. You can specify several viewport properties, such as its size and initial scale. Most important is the view port width, which defines the total number of horizontal pixels available from the web page's point of view (the number of CSS pixels available).
 				The screen density
 				The WebView class and most web browsers on Android convert your CSS pixel values to density-independent pixel values, so your web page	
 				such as its size and initial scale. Most important is the view port width, which defines the total number of horizontal pixels available from the web page's point of view (the number of CSS pixels available).
 				The screen density
 				The WebView class and most web browsers on Android convert your CSS pixel values to density-independent pixel values, so your web page	The screen density  
-				</p><!--텍스트 들어가는 자리-->
+				</p>
 			</div>
 		
     </div>
@@ -34,21 +37,22 @@
 
 	<!--side_gap :버튼들어갈 좌우여백부분, middle : 내용부분-->
 
+	<div class="fromby"><div class="from">from Book</div><div class="by">by Author</div></div>
 
-
-	<div class = "bottom">
-		<div class="fromby">from Book by Author</div>
-	</div>
-
-	
 		<div class="gap">
 		<div class="side_gap_left">
-		<div class="btn_left,btn">◀</div>
+		<div class="btn_left,btn">◀</div> 
 
 		<div class="side_gap_right">
 		<div class="btn_right,btn">▶</div>
 		</div>
+
 </div>
 
-    </div>
-{% endblock %}
+
+<div class="select">
+	
+</div>
+
+</body>
+</html>

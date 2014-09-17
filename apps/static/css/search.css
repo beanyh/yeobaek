@@ -1,0 +1,71 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+	height: 100vh;
+	width: 100vw;
+}
+
+.search{
+	text-align: center;
+	display: block;
+	height: 100vh;
+	width:100vw;
+}
+
+
+.text{
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	display: inline-block;
+	width:30vw;
+	padding-left: 5vw;
+}
+
+.line{
+	display: inline-block;
+	text-align: left;
+	padding-left:10vw;
+	width : 100vw;
+}
+
+.button{
+	display: inline-block;
+	text-align: center;
+	width : 100vw;
+	padding-top:5vw;
+}
+
+.keyword{
+	display: inline-block;
+	text-align: left;
+	width : 30vw;
+}
+
+
+.input_s{
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	right : 5vw;
+	width : 30vw;
+}
+
+.input_m{
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	right : 5vw;
+	width : 30vw;
+}
+
+button{
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	display: inline-block;
+}
+
+.btn_1{
+	width: 20vw;
+}
+
+.btn_2{
+	width: 20vw;
+}
