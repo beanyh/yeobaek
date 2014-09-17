@@ -5,8 +5,9 @@ Initialize Flask app
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.ext.migrate import Migrate, MigrateCommand
-from flask.ext.script import
+from flask.ext.script import Manager
 from pytesseract import image_to_string
+from apps import app
 
 app = Flask('apps')
 app.config.from_object('apps.settings.Production')

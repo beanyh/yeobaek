@@ -17,7 +17,6 @@ def search():
 
 @app.route('/write', methods=['POST', 'GET'])
 def write():
-
     if request.method == 'POST':
         im = Image.open("./apps/static/img/circle.png")
         text = image_to_string(im)
@@ -29,18 +28,17 @@ def write():
                     by_author=g.by_author,
                     like_count = 0
             )
-            db.session.add(posting)
-            db.session.commit()
+        db.session.add(posting)
+        db.session.commit()
 
-            flash(u'게시글을 작성하였습니다.','success')
+        flash(u'게시글을 작성하였습니다.','success')
         return redirect(url_for('article_list'))
 
-            url= url_for("shows", key = upload_data.key())
-
+        url= url_for("shows", key = upload_data.key())
     return render_template("write.html")
 
 @app.route('/photo', methods=['POST', 'GET'])
-def photo():
+def p_write():
 
     if request.method == 'POST':
         file = request.files['file']
@@ -66,7 +64,7 @@ def photo():
 
             url= url_for("shows", key = upload_data.key())
 
-            return render_template()
+        return render_template()
 
 
-        return render_template("write.html")
+    return render_template("write.html")
