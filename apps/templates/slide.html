@@ -1,0 +1,100 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<title>Swipe 2</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+<link href='style.css' rel='stylesheet'/>
+
+<script src = "static/js/Gruntfile-slide.js"></script>
+<script src = "static/js/slider.js"></script>
+<style>
+
+/* Swipe 2 required styles */
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+/* END required styles */
+
+</style>
+
+</head>
+<body>
+
+<h1>Swipe 2</h1>
+
+
+
+<div id='mySwipe' style='max-width:500px;margin:0 auto' class='swipe'>
+  <div class='swipe-wrap'>
+    <div><b>/*여기 안에 넣으면 슬라이드가능!*/
+
+        <div class="image-row">
+            <div class="image-set">
+                  <div class="col-md-9 col-md-push-3"></div>
+                   <div class="col-md-3 col-md-pull-9"></div>
+                {% for items in all_list %}
+
+                    <div class="col-xs-6 col-md-3">
+                        <a class="example-image-link" href="show/{{ items.key() }}"
+                           data-lightbox="example-set"><img class="example-image" src="show/{{ items.key() }}"  alt="...">
+                        </a>
+                     <p>{{items.text}}</p>
+                    </div>
+                {% endfor %}
+
+
+
+            </div>
+        </div>
+
+    </b></div>
+
+  </div>
+</div>
+
+
+
+<div style='text-align:center;padding-top:20px;'>
+  
+  <button onclick='mySwipe.prev()'>prev</button> 
+  <button onclick='mySwipe.next()'>next</button>
+
+</div>
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src='slider.js'></script>
+<script>
+
+// pure JS
+var elem = document.getElementById('mySwipe');
+window.mySwipe = Swipe(elem, {
+  // startSlide: 4,
+  // auto: 3000,
+  // continuous: true,
+  // disableScroll: true,
+  // stopPropagation: true,
+  // callback: function(index, element) {},
+  // transitionEnd: function(index, element) {}
+});
+
+// with jQuery
+// window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+
+</script>
