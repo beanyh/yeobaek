@@ -1,0 +1,155 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+body{
+	width: 100vw;
+	height:100vh;
+	margin:0;	
+}
+
+.main{
+	position:relative;
+	zoom:1;
+	background-color: #ffffff;
+	z-index: -300;
+	width:100vw;
+	height: 100vh;
+	text-align: center;
+	overflow: hidden;
+}
+
+.cir{
+	display: block;
+	position : absolute;
+	width: 100vw;
+	z-index: 200;
+}
+
+.fromby_bg{
+	top:75vh;
+	display: block;
+	position : absolute;
+	width: 100vw;
+	z-index: 150;
+}
+
+.text{
+	line-height:2em; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 1em;
+	font-family: 'Noto Sans', sans-serif;
+	position: absolute;
+	text-align: left;
+	width:90%;
+	height:88vh;
+	padding-left: 5%;
+	padding-right: 5%;
+	z-index: -100;
+}
+
+.top{
+	display: inline-block;
+	width : 100vw;
+	height: 10vh;
+	position : fixed;
+	z-index: 300;
+}
+
+
+.middle_bottom {
+	display: block;
+	width : 100vw;
+	height: 88vh;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 200;
+}
+
+
+
+.btn{
+	z-index: 300;
+	vertical-align: middle;
+	color: #ffffff;
+}
+
+
+
+.post{
+	display: inline-block;
+	position: fixed;
+	top : 3vh;
+	left : 5vw;
+	height:2.5em;
+	width:2.5em;
+	z-index: 500;
+	background-image: url(../img/post.png);
+	background-size: 2em 2em;
+	background-repeat:no-repeat;
+}
+
+.search{
+	display: inline-block;
+	position: fixed;
+	top : 3vh;
+	right : 5vw;
+	height:2.5em;
+	width:2.5em;
+	z-index: 500;
+	background-image: url(../img/search.png);
+	background-size: 2em 2em;
+	background-repeat:no-repeat;
+}
+
+.fromby{
+	display :block;
+	position:fixed;
+	top:85vh;
+	width: 100%;
+	text-decoration: none;
+	vertical-align: top;
+	text-align: center;
+	z-index: 150;
+}
+
+.from{	
+	font-size: 1.5em;
+	font-family: 'Covered By Your Grace', cursive;
+	color :#ffffff;
+}
+.by{	
+	font-size: 1.3em;
+	font-family: 'Covered By Your Grace', cursive;
+	color :#dddddd;
+}
+
+
+
+.gap{
+	position: fixed;
+	display: block;
+	width : 100vw;
+	height: 100vh;
+	text-align: center;
+	z-index:160;
+}
+.side_gap_left {
+	position:fixed;
+	font-size: 1em;
+	top:75vh;
+	left : 0vw;
+	width:15vw;
+}
+.side_gap_right {
+	position:fixed;
+	font-size: 1em;
+	top:75vh;
+	right : 0vw;
+	width:15vw;
+}
+.select{
+	display :hidden;
+}

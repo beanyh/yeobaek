@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <title> 여백 메인화면:) </title>
+	<link rel = "stylesheet" href="../static/css/main3.css">
+    <link rel = "stylesheet" href="../static/css/slider.css">
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+
+<div class="main">
+	<div class="top">
+		 <a href="{{ url_for('photo') }}"><div class="post"></div></a>
+		<div class="search"></div>
+	</div>
+
+
+	<div class="middle_bottom">
+		<img class = "cir" src = "../static/img/cir_shadow.png">
+			<div class ="text">
+			<!--{% for items in all_list %}
+			    <a class="text" href="show/{{ items.key() }}"><img class="example-image" src="show/{{ items.key() }}" alt=""></a>
+                {% endfor %}-->
+				<p>The viewport is the rectangular area that provides a drawable region for your web page. You can specify several viewport properties, such as its size and initial scale. Most important is the view port width, which defines the total number of horizontal pixels available from the web page's point of view (the number of CSS pixels available).
+				The screen density
+				The WebView class and most web browsers on Android convert your CSS pixel values to density-independent pixel values, so your web page	
+				such as its size and initial scale. Most important is the view port width, which defines the total number of horizontal pixels available from the web page's point of view (the number of CSS pixels available).
+				The screen density
+				The WebView class and most web browsers on Android convert your CSS pixel values to density-independent pixel values, so your web page	The screen density  
+				</p>
+			</div>
+		
+    </div>
+
+
+
+	<!--side_gap :버튼들어갈 좌우여백부분, middle : 내용부분-->
+	<img class = "fromby_bg" src = "../static/img/fromby.png">
+		<div class="fromby"><div class="from">from Book name Yeoback</div><div class="by">by Author</div></div>
+
+		<div class="gap">
+		<img class = "side_gap_left" src = "../static/img/gap_left.png">
+		<img class = "side_gap_right" src = "../static/img/gap_right.png">
+		</div>
+
+</div>
+
+
+<div class="select">
+	
+</div>
+
+</body>
+</html>
