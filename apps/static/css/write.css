@@ -7,7 +7,7 @@ body{
 	margin:0;	
 }
 
-.search{
+.write{
 	position:relative;
 	zoom:1;
 	background-color: #ffffff;
@@ -36,7 +36,7 @@ body{
 	display: inline-block;
 	position: fixed;
 	top : 3vh;
-	left : 5vw;
+	right : 5vw;
 	height:2.5em;
 	width:2.5em;
 	z-index: 500;
@@ -46,46 +46,52 @@ body{
 }
 
 
-.input{
-	position: fixed;
-	display: block;
-	top : 20vh;
-	z-index: 300;
-}
 .text{
-	font-size: 1em;
+	font-size: 0.8em;
 	font-family: 'Noto Sans', sans-serif;
 	display: inline-block;
-	width:30vw;
-	padding-top:5vw;
-	height: 1.5em;
+	width:20vw;
+	padding-top:2vw;
+	height: 1em;
 	text-align: left;
-	color: #536339;
+	color: #385860;
 }
+
 
 .line{
 	display: inline-block;
 	text-align: left;
 	padding-left:15vw;
 	width : 100vw;
+	z-index: 200;
 }
 
-.or{
-	font-size: 1em;
-	font-family: 'Noto Sans', sans-serif;
-	padding-top: 10vw;
-	height: 1.5em;
-	width: 100vw;
-	text-align: center;
-	color: #536339;
-}
 .input_s{
 	background :transparent;
 	border: transparent;
-	border-bottom: solid 1px #536339;
-	font-size: 1em;
+	border-bottom: solid 1px #6f99a3;
+	font-size: 0.8em;
+	font-family: 'Noto Sans', sans-serif;
+	width : 50vw;
+}
+
+.input_l{
+	margin-top: 2vh;
+	display: block;
+	background :transparent;
+	border: transparent;
+	border: solid 1px #6f99a3;
+	font-size: 0.8em;
 	font-family: 'Noto Sans', sans-serif;
 	width : 70vw;
+	height: 40vh;
+}
+
+.input{
+	position: fixed;
+	display: block;
+	top : 10vh;
+	z-index: 300;
 }
 
 .btn{
@@ -93,7 +99,7 @@ body{
 	top:75vh;
 	background :transparent;
 	border: transparent;
-	background-image: url(../img/search_btn.png);
+	background-image: url(../img/write_btn.png);
 	background-repeat: no-repeat;
 	background-size: auto 25vh;
 	background-position: center;
@@ -105,8 +111,10 @@ body{
 
 	position: fixed;
 	z-index: 10;
-	font-size: 1em;
-	font-family: 'Noto Sans', sans-serif;
-	color :#725540;
 }
 
+.or{
+	height: 2vh;
+	width: 100vw;
+
+}
