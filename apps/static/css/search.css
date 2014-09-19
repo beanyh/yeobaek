@@ -49,11 +49,11 @@ body{
 .input{
 	position: fixed;
 	display: block;
-	top : 20vh;
+	top : 15vh;
 	z-index: 300;
 }
 .text{
-	font-size: 1em;
+	font-size: 0.8em;
 	font-family: 'Noto Sans', sans-serif;
 	display: inline-block;
 	width:30vw;
@@ -71,7 +71,7 @@ body{
 }
 
 .or{
-	font-size: 1em;
+	font-size: 0.8em;
 	font-family: 'Noto Sans', sans-serif;
 	padding-top: 10vw;
 	height: 1.5em;
@@ -80,9 +80,10 @@ body{
 	color: #536339;
 }
 .input_s{
-	background :transparent;
-	border: transparent;
-	border-bottom: solid 1px #536339;
+	margin-top: 1vh;
+	background :#ffffff;
+	border: solid 1px #afbc93;
+	border-radius: 5em;
 	font-size: 1em;
 	font-family: 'Noto Sans', sans-serif;
 	width : 70vw;
