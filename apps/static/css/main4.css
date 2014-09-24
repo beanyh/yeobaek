@@ -1,0 +1,188 @@
+
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+
+body{
+	width: 100vw;
+	height:100vh;
+	margin:0;	
+}
+
+.main{
+	position:relative;
+	zoom:1;
+	background-color: #ffffff;
+	z-index: -300;
+	width:100vw;
+	height: 100vh;
+	text-align: center;
+	overflow: hidden;
+}
+
+.cir{
+	display: block;
+	position : absolute;
+	width: 100vw;
+	z-index: 200;
+}
+
+.fromby_bg{
+	top:75vh;
+	display: block;
+	position : absolute;
+	width: 100vw;
+	z-index: 150;
+}
+
+/*.text{
+	line-height:2em; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 1em;
+	font-family: 'Noto Sans', sans-serif;
+	position: absolute;
+	text-align: left;
+	width:90%;
+	height:88vh;
+	padding-left: 5%;
+	padding-right: 5%;
+	z-index: -100;
+}
+*/
+
+.flower_container{
+	text-align: center;
+	vertical-align: middle;
+	height:88vh;
+	width: 100%;
+	overflow: hidden;
+	z-index: -100;
+}
+.flower_photo{
+	text-overflow: ellipsis;
+	font-size: 1em;
+	font-family:'Noto+Sans',sans-serif;
+	font-weight: 700;
+	height:88vh;
+	z-index: -100;
+	background-image: url("http://news.bbcimg.co.uk/media/images/77782000/jpg/_77782205_77ab04d3-d3dc-4a5b-b210-55be29f20ed6.jpg");
+}
+
+.top{
+	display: inline-block;
+	width : 100vw;
+	height: 10vh;
+	position : fixed;
+	z-index: 300;
+}
+
+
+.middle_bottom {
+	display: block;
+	width : 100vw;
+	height: 88vh;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 200;
+}
+
+
+
+.btn{
+	z-index: 300;
+	vertical-align: middle;
+	color: #ffffff;
+}
+
+
+
+.post{
+	display: inline-block;
+	position: fixed;
+	top : 3vh;
+	left : 5vw;
+	height:2.5em;
+	width:2.5em;
+	z-index: 500;
+	background-image: url(../img/post.png);
+	background-size: 2em 2em;
+	background-repeat:no-repeat;
+}
+
+.search{
+	display: inline-block;
+	position: fixed;
+	top : 3vh;
+	right : 5vw;
+	height:2.5em;
+	width:2.5em;
+	z-index: 500;
+	background-image: url(../img/search.png);
+	background-size: 2em 2em;
+	background-repeat:no-repeat;
+}
+
+.fromby{
+	display :block;
+	position:fixed;
+	top:85vh;
+	width: 100%;
+	text-decoration: none;
+	vertical-align: top;
+	text-align: center;
+	z-index: 150;
+}
+
+.fromby_bg{
+	background-color:#F8CA43;
+	width: 100%;
+	top:75vh;
+	height: 25vh;
+}
+
+.from{	
+	font-size: 1em;
+	font-family:'Noto+Sans',sans-serif;
+	font-weight: 700;
+	color :#eeeeee;
+	width : 70vw;
+	display: block;
+	margin-left: 15vw;
+	opacity: 90%;
+}
+.by{	
+	margin-top: 1vh;
+	font-size: 0.6em;
+	font-family:'Noto+Sans',sans-serif;
+	font-weight: 700;
+	color :#dddddd;
+}
+
+
+
+.gap{
+	position: fixed;
+	display: block;
+	width : 100vw;
+	height: 100vh;
+	text-align: center;
+	z-index:160;
+}
+.side_gap_left {
+	position:fixed;
+	font-size: 1em;
+	top:75vh;
+	left : 0vw;
+	width:15vw;
+}
+.side_gap_right {
+	position:fixed;
+	font-size: 1em;
+	top:75vh;
+	right : 0vw;
+	width:15vw;
+}
+.select{
+	display :hidden;
+}
