@@ -1,6 +1,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans);
-
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 
 body{
 	width: 100vw;
@@ -34,7 +35,7 @@ body{
 	z-index: 150;
 }
 
-.text{
+/*.text{
 	line-height:2em; 
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -46,6 +47,24 @@ body{
 	height:88vh;
 	padding-left: 5%;
 	padding-right: 5%;
+	z-index: -100;
+}
+*/
+
+.flower_container{
+	text-align: center;
+	vertical-align: middle;
+	height:88vh;
+	width: 100%;
+	overflow: hidden;
+	z-index: -100;
+}
+.flower_photo{
+	text-overflow: ellipsis;
+	font-size: 1em;
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
+	height:88vh;
 	z-index: -100;
 }
 
@@ -106,7 +125,7 @@ body{
 .fromby{
 	display :block;
 	position:fixed;
-	top:87vh;
+	top:83vh;
 	width: 100%;
 	text-decoration: none;
 	vertical-align: top;
@@ -114,15 +133,24 @@ body{
 	z-index: 150;
 }
 
+.fromby_bg{
+	background-color:#F8CA43;
+	width: 100%;
+	top:75vh;
+	height: 25vh;
+}
+
 .from{	
-	font-size: 1em;
-	font-family: 'Noto Sans', sans-serif;
+	font-size: 2.5em;
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
 	color :#ffffff;
 }
 .by{	
-	font-size: 0.8em;
-	font-family: 'Noto Sans', sans-serif;
-	color :#dddddd;
+	font-size: 2em;
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
+	color :#eeeeee;
 }
 
 
