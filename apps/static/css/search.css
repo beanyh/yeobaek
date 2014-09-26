@@ -1,7 +1,5 @@
 
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 
 body{
 	height: 100vh;
@@ -24,6 +22,8 @@ body{
 	display: block;
 	position : absolute;
 	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
 	z-index: 100;
 }
 
@@ -55,11 +55,11 @@ body{
 	z-index: 300;
 }
 .text{
-	font-size: 1.5em;
-	font-family: 'Amatic SC', cursive;
-	font-weight: 400;
+	font-size: 0.8em;
+	font-family: 'Noto Sans', sans-serif;
 	display: inline-block;
 	width:30vw;
+	padding-top:5vw;
 	height: 1.5em;
 	text-align: left;
 	color: #536339;
@@ -73,9 +73,9 @@ body{
 }
 
 .or{
-	font-size: 1.2em;
-	font-family: 'Amatic SC', cursive;
-	font-weight: 400;
+	font-size: 0.8em;
+	font-family: 'Noto Sans', sans-serif;
+	padding-top: 10vw;
 	height: 1.5em;
 	width: 100vw;
 	text-align: center;
@@ -83,13 +83,11 @@ body{
 }
 .input_s{
 	margin-top: 1vh;
-	margin-bottom: 1vh;
 	background :#ffffff;
 	border: solid 1px #afbc93;
 	border-radius: 5em;
-	font-size: 1.5em;
-	font-family: 'Amatic SC', cursive;
-	font-weight: 400;
+	font-size: 1em;
+	font-family: 'Noto Sans', sans-serif;
 	width : 70vw;
 }
 
@@ -110,9 +108,8 @@ body{
 
 	position: fixed;
 	z-index: 10;
-	font-size: 1.5em;
-	font-family: 'Amatic SC', cursive;
-	font-weight: 400;
+	font-size: 1em;
+	font-family: 'Noto Sans', sans-serif;
 	color :#725540;
 }
 

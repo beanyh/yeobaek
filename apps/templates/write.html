@@ -7,12 +7,11 @@
 	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <body>
-<div class = "write">
 <div class="top">
 	<div class="go_main"></div>
 </div>
-<img class = "cir" src = "../static/img/non_cir_shadow.png">
-	<form>
+	<img class = "cir" src = "../static/img/non_cir_shadow.png">
+	<form action="/write" enctype="multipart/form-data" method="POST">
 	<div class = "input">
 
 		<div class = "line">
@@ -25,48 +24,21 @@
 		</div>
 		<div class = "line">
 			<span class= "text">From</span>
-			<input type=text class="input_s" name="from">
+			<input type=text class="input_from" name="from">
 		</div>
 		<div class = "line">
 			<span class= "text">By</span>
-			<input type=text class="input_s" name="by">
+			<input type=text class="input_by" name="by">
 		</div>
-		
+		<div class = "image_upload">
+        <span class = "text">
+        Image Upload</br></br>
+        <input type="file" name="file">
+        </span>
+        </div>
 
 	</div>
 	<button type="submit" class="btn"></button>
 	</form>
-</div>
-<!--
-<div class = "write">
-<div class="top">
-	<div class="go_main"></div>
-</div>
-<img class = "cir" src = "../static/img/non_cir_shadow.png">
- <form>
-	<div class ="line">
-		<div class = "from">
-			<span class= "text">From  </span>
-			<input type=text class="input_s" name="from">
-		</div>
-	</div>
-	<div class = "line">
-		<div class = "by">
-			<span class= "text"> By   </span>
-			<input type=text class="input_s" name="by">
-		</div>
-	</div>
-
-		<div class = "or">
-		<span></span>
-		</div>
-			<div class = "write">
-				<span class= "text">Write   </span> 
-				<input type=text class="input_l" name="write">
-				<button type="submit" class="btn"></button>
-			</div>
-
-</form>
-</div>-->
 </body>
 </html>

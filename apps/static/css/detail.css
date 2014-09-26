@@ -1,0 +1,123 @@
+
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+body{
+	width: 100vw;
+	margin:0;	
+}
+
+
+
+.text{
+	line-height:2em; 
+	text-overflow: ellipsis;
+	font-size: 1em;
+	font-family: 'Noto Sans', sans-serif;
+	position: absolute;
+	text-align: left;
+	width:90%;
+	top:10vh;
+	padding-left: 5%;
+	padding-right: 5%;
+	z-index: -100;
+}
+
+.top{
+	display: inline-block;
+	width : 100vw;
+	height: 10vh;
+	position : fixed;
+	z-index: 300;
+}
+
+
+.middle_bottom {
+	display: block;
+	width : 100vw;
+	height: 88vh;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 200;
+}
+
+
+
+.btn{
+	z-index: 300;
+	vertical-align: middle;
+	color: #ffffff;
+}
+
+
+
+.post{
+	display: inline-block;
+	position: fixed;
+	top : 3vh;
+	left : 5vw;
+	height:2.5em;
+	width:2.5em;
+	z-index: 500;
+	background-image: url(../img/post.png);
+	background-size: 2em 2em;
+	background-repeat:no-repeat;
+}
+
+.search{
+	display: inline-block;
+	position: fixed;
+	top : 3vh;
+	right : 5vw;
+	height:2.5em;
+	width:2.5em;
+	z-index: 500;
+	background-image: url(../img/search.png);
+	background-size: 2em 2em;
+	background-repeat:no-repeat;
+}
+
+
+.fromby_top{
+	display :block;
+	position:fixed;
+	padding-top:3vh;
+	padding-bottom: 3vh;
+	height : 7vh;
+	width: 100%;
+	text-decoration: none;
+	vertical-align: top;
+	text-align: center;
+	z-index: 150;
+	background-color: #594f37;opacity: 0.95; 
+	}
+
+.from_top{	
+	height: 4vh;
+	font-size: 1.2em;
+	font-family: 'Noto Sans', sans-serif;
+	color :#ffffff;
+}
+.by_top{	
+	height:3vh;
+	font-size: 1em;
+	font-family: 'Noto Sans', sans-serif;
+	color :#eeeeee;
+}
+
+.back_btn{
+	position: fixed;
+	top: 90vh;
+	left : 83vw;
+	height:12vw;
+	width:12vw;
+	opacity: 95%;
+}
+
+.fb-like{
+	position: fixed;
+	top: 10px;
+	left : 10px;
+	height:200px;
+	width: 200px;
+}
