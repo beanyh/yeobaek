@@ -125,7 +125,7 @@ body{
 	position:fixed;
 	top:3vh;
 	height : 7vh;
-	width: 100%;
+	width: 100vw;
 	text-decoration: none;
 	vertical-align: top;
 	text-align: center;
