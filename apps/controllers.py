@@ -4,9 +4,14 @@ from apps import app, db
 from pytesser import *
 from PIL import Image
 import logging
+from database import Database
+
+dataStorage = Database()
+
+@app.route
 
 @app.route('/', methods=['POST','GET'])
-def search():
+def main():
     return render_template('main.html')
 
 @app.route('/write', methods=['POST', 'GET'])
@@ -16,6 +21,17 @@ def write():
         text = image_to_string(im)
         logging.debug(text)
 
+
+    storage = {}
+    storage['contents'] = request.form['contents']
+    storage['from_book'] = request.form['from_book']
+    storage['by_author'] = request.form['by_author']
+    storage['date'] = request.form['date']
+    dataStorage.put(storage)
+
+
+    return redirect(url_for('main'))
+'''
         posting = Post(
                     author=g.user_name,
                     from_book=g.from_book,
@@ -24,11 +40,8 @@ def write():
             )
         db.session.add(posting)
         db.session.commit()
+'''
 
-        flash(u'게시글을 작성하였습니다.','success')
-        return redirect(url_for('article_list'))
-
-        url= url_for("shows", key = upload_data.key())
     return render_template("write.html")
 
 
