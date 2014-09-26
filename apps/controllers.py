@@ -5,7 +5,36 @@ from pytesser import *
 from PIL import Image
 import logging
 
+@app.route('/', methods=['POST','GET'])
+def search():
+    return render_template('main.html')
 
+@app.route('/write', methods=['POST', 'GET'])
+def write():
+    if request.method == 'POST':
+        im = Image.open("./apps/static/img/circle.png")
+        text = image_to_string(im)
+        logging.debug(text)
+
+        posting = Post(
+                    author=g.user_name,
+                    from_book=g.from_book,
+                    by_author=g.by_author,
+                    like_count = 0
+            )
+        db.session.add(posting)
+        db.session.commit()
+
+        flash(u'게시글을 작성하였습니다.','success')
+        return redirect(url_for('article_list'))
+
+        url= url_for("shows", key = upload_data.key())
+    return render_template("write.html")
+
+
+
+
+"""
 ALLOWED_EXTENSIONS = ['jpg', 'png', 'jpeg', 'gif', 'tif']
 
 def allowed_file(filename):
@@ -68,3 +97,4 @@ def p_write():
 
 
     return render_template("write.html")
+"""

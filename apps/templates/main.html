@@ -10,7 +10,7 @@
 <body>
 	<div class="top">
 		<a href="{{ url_for('write') }}"><div class="post"></div></a>
-		<a href="{{ url_for('write') }}"><div class="search"></div></a>
+		<a href="{{ url_for('search') }}"><div class="search"></div></a>
 <!--search before/after  jinsa -->
 	</div>
 		<img class = "cir" src = "../static/img/cir_shadow.png">
@@ -22,14 +22,14 @@
 			    <a class="text" href="show/{{ items.key() }}"><img class="example-image" src="show/{{ items.key() }}" alt=""></a>
                 {% endfor %}-->
 				<p>
-  					{{%text%}}
+  					text
 				</p>
 			</div>
 		
     </div>
 	<!--side_gap :버튼들어갈 좌우여백부분, middle : 내용부분-->
 
-		<div class="fromby"><div class="from">{{Alice's Adventures in Wonderland}}</div><div class="by">{{Charles Lutwidge}}</div></div>
+		<div class="fromby"><div class="from">Alice's Adventures in Wonderland</div><div class="by">Charles Lutwidge</div></div>
 </div>
 		<div class = "fromby_bg"></div>
 		<div class="gap">
