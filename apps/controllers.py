@@ -8,7 +8,6 @@ from database import Database
 
 dataStorage = Database()
 
-@app.route
 
 @app.route('/', methods=['POST','GET'])
 def main():
