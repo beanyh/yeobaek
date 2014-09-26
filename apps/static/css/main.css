@@ -100,7 +100,7 @@ body{
 	display :block;
 	position:fixed;
 	top:87vh;
-	width: 100%;
+	width: 100vw;
 	text-decoration: none;
 	vertical-align: top;
 	text-align: center;
@@ -150,7 +150,7 @@ body{
 	position: fixed;
 	display: block;
 	width : 100vw;
-	height: 100vh;
+	height: 25vh;
 	text-align: center;
 	z-index:160;
 }
@@ -165,6 +165,6 @@ body{
 	position:fixed;
 	font-size: 1em;
 	top:75vh;
-	right : 0vw;
+	left : 85vw;
 	width:15vw;
 }

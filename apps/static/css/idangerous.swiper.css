@@ -30,7 +30,7 @@ Basic Swiper Styles
 }
 .swiper-wrapper {
 	position:relative;
-	width:100%;
+	width:100vw;
 	-webkit-transition-property:-webkit-transform, left, top;
 	-webkit-transition-duration:0s;
 	-webkit-transform:translate3d(0px,0,0);
@@ -128,6 +128,6 @@ Pagination Styles
 
 
 .swiper-container, .swiper-slide {
-  width: 100%px;
-  height: 100%px;
+  width: 100vw;
+  height: 100vh;
 }
