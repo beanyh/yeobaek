@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
-from pytesser import *
+import pytesser
 from StringIO import StringIO
 from PIL import Image
 
@@ -28,7 +28,7 @@ def write():
         if file and allowed_file(file.filename):
             filestream = file.read()
             im = Image.open(StringIO(filestream))
-            text = image_to_string(im)
+            text = pytesser.image_to_string(im)
             return render_template('write.html', text = text)
     return render_template("write.html",text=text)
 
