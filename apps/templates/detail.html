@@ -54,13 +54,23 @@ And much more, all available under the Apache 2 license
 				</p>
 			</div>
     </div>
-	<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
+
 </div><a href="{{ url_for('main') }}"><img class="back_btn" src="../static/img/back.png"></div></a>
+  
+  <script src="../static/js/jquery-1.10.1.min.js"></script>
+  <script>
+     $(function(){
 
+      $("html").addClass('wf-next').removeClass('wf-active wf-inactive wf-loading');
+      setTimeout(function(){
+        redirectToLink("main");
+      }, 1500);
 
+    $(".fromby_top").animate({
+      top:'-1vh',
+    });
+    $(".back_btn").fadeIn(1500);
+});
+  </script>
 </body>
 </html>

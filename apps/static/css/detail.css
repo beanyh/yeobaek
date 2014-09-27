@@ -85,6 +85,7 @@ body{
 	padding-bottom: 3vh;
 	height : 7vh;
 	width: 100%;
+	top :-15vh;
 	text-decoration: none;
 	vertical-align: top;
 	text-align: center;
@@ -111,13 +112,6 @@ body{
 	left : 83vw;
 	height:12vw;
 	width:12vw;
-	opacity: 95%;
+	display: none;
 }
 
-.fb-like{
-	position: fixed;
-	top: 10px;
-	left : 10px;
-	height:200px;
-	width: 200px;
-}
