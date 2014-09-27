@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
-from pytesseract import *
+from pytesser import *
 from StringIO import StringIO
 from PIL import Image
 
@@ -14,6 +14,10 @@ def allowed_file(filename):
 
 @app.route("/")
 def index():
+    return render_template('main.html', text = text)
+
+@app.route("/main")
+def main():
     return render_template('main.html', text = text)
 
 @app.route('/write', methods=['GET', 'POST'])
@@ -32,6 +36,10 @@ def write():
 @app.route("/search", methods=['GET','POST'])
 def search():
     return render_template('search.html', text = text)
+
+@app.route("/detail")
+def detail():
+    return render_template('detail.html', text = text)
 
 
 if __name__ == "__main__":
