@@ -1,18 +1,17 @@
 /*
- * Swiper - Mobile Touch Slider CSS
- * http://www.idangero.us/sliders/swiper
+ * Swiper 2.7.0
+ * Mobile touch slider and framework with hardware accelerated transitions
  *
- * Vladimir Kharlampidi, The iDangero.us
- * http://www.idangero.us/
- * 
- * Copyright 2012-2013, Vladimir Kharlampidi
+ * http://www.idangero.us/sliders/swiper/
+ *
+ * Copyright 2010-2014, Vladimir Kharlampidi
  * The iDangero.us
- * http://www.idangero.us
+ * http://www.idangero.us/
  *
  * Licensed under GPL & MIT
  *
+ * Released on: August 30, 2014
 */
-
 /* ===============================================================
 Basic Swiper Styles 
 ================================================================*/
@@ -30,7 +29,7 @@ Basic Swiper Styles
 }
 .swiper-wrapper {
 	position:relative;
-	width:100vw;
+	width:100%;
 	-webkit-transition-property:-webkit-transform, left, top;
 	-webkit-transition-duration:0s;
 	-webkit-transform:translate3d(0px,0,0);
@@ -122,13 +121,4 @@ Pagination Styles
 .swiper-visible-switch {
 	/* Specific visible button style: */	
 	
-}
-
-
-
-
-.swiper-container, .swiper-slide {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
 }
