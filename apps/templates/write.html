@@ -12,15 +12,20 @@
 </div>
 	<img class = "cir" src = "../static/img/non_cir_shadow.png">
 	<form action="/write" enctype="multipart/form-data" method="POST">
-	<div class = "input">
+    <div class = "image_upload">
+    <span class = "text">
+    Image Upload</br></br>
+    <input type="file" name="file">    <button type="submit" class="btn_trans">trans</button>
+    </span>
+    </div>
+    </form>
 
+	<div class = "input">
 		<div class = "line">
 			<span class= "text">Contents</span> 
 			<input type=text class="input_l" name="contents" value = {{text}}>
 		</div>
-		
 		<div class = "or">
-
 		</div>
 		<div class = "line">
 			<span class= "text">From</span>
@@ -30,12 +35,7 @@
 			<span class= "text">By</span>
 			<input type=text class="input_by" name="by">
 		</div>
-		<div class = "image_upload">
-        <span class = "text">
-        Image Upload</br></br>
-        <input type="file" name="file">
-        </span>
-        </div>
+
 
 	</div>
 	<button type="submit" class="btn"></button>

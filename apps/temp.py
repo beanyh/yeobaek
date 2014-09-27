@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for
 from pytesseract import *
 from StringIO import StringIO
+from PIL import Image
+
+
 
 app = Flask(__name__)
 text = ""
@@ -15,14 +18,15 @@ def index():
 
 @app.route('/write', methods=['GET', 'POST'])
 def write():
+    text = ""
     if request.method == 'POST':
         file = request.files['file']
         if file and allowed_file(file.filename):
             filestream = file.read()
             im = Image.open(StringIO(filestream))
             text = image_to_string(im)
-            return render_template('main.html', text = text)
-    return render_template("write.html")
+            return render_template('write.html', text = text)
+    return render_template("write.html",text=text)
 
 
 @app.route("/search", methods=['GET','POST'])
